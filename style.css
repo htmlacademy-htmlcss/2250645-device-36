@@ -1,6 +1,27 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/rubik/rubik-400.woff2) format("woff2");
+  font-display: swap;
+}
 .html {
   height: 100%;
 }
 .body {
   width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+.navigation {
+  width: 1160px;
+  height: 300px;
+  background-color:#FFE17F;
 }
