@@ -20,8 +20,64 @@
   display: flex;
   flex-direction: column;
 }
+.header {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
 .navigation {
   width: 1160px;
   height: 300px;
   background-color:#FFE17F;
+}
+
+.form-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 519px;
+  height: 40px;
+  margin: 0 0 0 16px;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  color: #FFE17F;
+}
+.input-search {
+  width: 308px;
+  height: 20px;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+.button-icon {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+  padding: 16px;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z' fill='black'/%3E%3C/svg%3E") no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.button-search {
+  width: 160px;
+  height: 40px;
+  border-width: 2px;
+  border-style: none none none solid;
+  background: inherit;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
