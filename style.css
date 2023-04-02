@@ -22,25 +22,34 @@
 }
 .header {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
 }
+/* навигация */
 .navigation {
   width: 1160px;
   height: 300px;
   background-color:#FFE17F;
 }
-
+.search-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-search {
+  display: flex;
+  align-items: center;
+}
 .form-search {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 519px;
   height: 40px;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 60px;
   border: 2px solid #000000;
   border-radius: 50px;
   color: #FFE17F;
+  margin-right: 20px;
 }
 .input-search {
   width: 308px;
@@ -80,4 +89,24 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+.menu-item {
+  list-style: none;
+  display: contents;
+}
+.menu-link {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  padding-left: 12px;
+  padding-right: 20px;
 }

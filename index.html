@@ -11,27 +11,47 @@
     <header class="header">
       <nav class="navigation">
         <img src="/img/logo.svg" alt="logo" class="logo">
-
-        <div class="container-search">
-          <form class="form-search" action="#">
-            <button class="button-icon"></button>
-            <input class="input-search" placeholder="Поиск по сайту" type="search" name="search" id="search">
-            <button class="button-search" type="submit">Найти</button>
-          </form>
+        <div class="search-menu">
+          <div class="container-search">
+            <form class="form-search" action="#">
+              <button class="button-icon"></button>
+              <input class="input-search" placeholder="Поиск по сайту" type="search" name="search" id="search">
+              <button class="button-search" type="submit">Найти</button>
+            </form>
+            <div class="enter">
+                <span><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 12H13C12.8 9.4 10.9 7.2 8.3 6.5C9.3 5.9 10 4.8 10 3.5C10 1.6 8.4 0 6.5 0C4.6 0 3 1.6 3 3.5C3 4.8 3.7 5.9 4.7 6.5C2.1 7.2 0.2 9.4 0 12Z" fill="black"/></svg></span>
+                <a class="menu-link" href="#">Войти</a>
+            </div>
+          </div>
+          <ul class="menu">
+            <li class="menu-item">
+              <span><svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0.786987H4V12.787H6V0.786987Z" fill="black"/>
+                <path d="M2 4.78699H0V12.787H2V4.78699Z" fill="black"/>
+                <path d="M10 3.78699H8V12.787H10V3.78699Z" fill="black"/>
+                </svg>
+              </span>
+              <a class="menu-link" href="#">Сравнить</a>
+            </li>
+            <li class="menu-item">
+              <span><svg width="31" height="22" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_11503_3437)">
+                <path d="M30.3 7.28699L26.8 7.48699L23.6 2.58699C23.5 2.38699 23.2 2.28699 23 2.28699C22.8 2.28699 22.5 2.38699 22.4 2.58699L19.2 7.48699H15.7C15.3 7.48699 15 7.78699 15 8.18699C15 8.28699 15 8.28699 15 8.38699L16.9 15.187C17.1 15.887 17.6 16.287 18.3 16.287H27.7C28.4 16.287 28.9 15.887 29.1 15.187L31 8.28699C31 8.18699 31 8.18699 31 8.08699C31 7.68699 30.7 7.28699 30.3 7.28699ZM23 4.18699L25.2 7.38699H20.9L23 4.18699Z" fill="black"/>
+                </g>
+                <circle cx="10.5" cy="10.787" r="10.5" fill="white"/>
+                <path d="M7.3996 15.287C7.30627 15.287 7.22693 15.259 7.1616 15.203C7.1056 15.1377 7.0776 15.0583 7.0776 14.965V14.517C7.0776 14.3023 7.19427 14.097 7.4276 13.901L10.3956 10.933C11.1143 10.3357 11.6089 9.85032 11.8796 9.47699C12.1503 9.09432 12.2856 8.69299 12.2856 8.27299C12.2856 7.73165 12.1316 7.30699 11.8236 6.99899C11.5249 6.69099 11.0863 6.53699 10.5076 6.53699C9.96627 6.53699 9.53227 6.70032 9.2056 7.02699C8.87893 7.34432 8.67827 7.76899 8.6036 8.30099C8.58493 8.41299 8.53827 8.49699 8.4636 8.55299C8.39827 8.59965 8.3236 8.62299 8.2396 8.62299H7.5116C7.4276 8.62299 7.3576 8.59965 7.3016 8.55299C7.2456 8.49699 7.2176 8.43165 7.2176 8.35699C7.23627 7.85299 7.3716 7.37232 7.6236 6.91499C7.8756 6.44832 8.24427 6.07032 8.7296 5.78099C9.22427 5.48232 9.81694 5.33299 10.5076 5.33299C11.5623 5.33299 12.3556 5.60832 12.8876 6.15899C13.4289 6.70032 13.6996 7.39099 13.6996 8.23099C13.6996 8.81899 13.5503 9.35099 13.2516 9.82699C12.9623 10.2937 12.5096 10.7977 11.8936 11.339L9.2056 14.069H13.5736C13.6763 14.069 13.7556 14.1017 13.8116 14.167C13.8769 14.223 13.9096 14.2977 13.9096 14.391V14.965C13.9096 15.0583 13.8769 15.1377 13.8116 15.203C13.7463 15.259 13.6669 15.287 13.5736 15.287H7.3996Z" fill="black"/>
+                <defs>
+                <clipPath id="clip0_11503_3437">
+                <rect width="16" height="14" fill="white" transform="translate(15 2.28699)"/>
+                </clipPath>
+                </defs>
+                </svg>
+                </span>
+              <a class="menu-link" href="#">Корзина</a>
+            </li>
+          </ul>
         </div>
-
-
-        <ul class="menu">
-          <li class="menu-item">
-            <a class="menu-link" href="#">Войти</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#">Сравнить</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#">Корзина</a>
-          </li>
-        </ul>
         <ul class="catalog">
           <li class="catalog-item">
             <a class="catalog-link" href="#">каталог товаров</a>
