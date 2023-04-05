@@ -19,13 +19,25 @@
   width: 1440px;
   display: flex;
   flex-direction: column;
+  color: #000000;
 }
 .header {
   display: flex;
   justify-content: center;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* навигация */
 .navigation {
+  position: relative;
   width: 1160px;
   height: 300px;
   background-color:#FFE17F;
@@ -109,4 +121,73 @@
   cursor: pointer;
   padding-left: 12px;
   padding-right: 20px;
+}
+.enter-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.catalog {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 45px 0 0 60px;
+  padding: 0;
+}
+.catalog-item {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0 7px 0 0;
+}
+.catalog-link {
+  color: #000000;
+  text-decoration: none;
+}
+.catalog-icon {
+  width: 50px;
+  height: 50px;
+  opacity: 0.3;
+}
+.list {
+  display: flex;
+  list-style: none;
+  margin: 45px 0 0 0;
+}
+.list-item {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding-right: 50px;
+}
+.list-item :last-child {
+  margin-right: 10px;
+}
+.list-link {
+  color: #000000;
+  text-decoration: none;
+}
+.number {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  text-align: right;
+  width: 250px;
+  height: 135px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #ffffff;
+  right: 100px;
+  bottom: 0;
+  top: 0;
+  left: 0;
 }
