@@ -15,15 +15,16 @@
 .html {
   height: 100%;
 }
-.body {
+body {
   width: 1440px;
   display: flex;
   flex-direction: column;
   color: #000000;
 }
 .header {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
+  padding: 40px 140px 0 140px;
 }
 .visually-hidden {
   position: absolute;
@@ -131,7 +132,7 @@
   display: flex;
   align-items: center;
   list-style: none;
-  margin: 45px 0 0 60px;
+  margin: 0 0 0 60px;
   padding: 0;
 }
 .catalog-item {
@@ -155,7 +156,7 @@
 .list {
   display: flex;
   list-style: none;
-  margin: 45px 0 0 0;
+  /* margin: 45px 0 0 0; */
 }
 .list-item {
   font-family: "Raleway";
@@ -186,8 +187,94 @@
   font-size: 180px;
   line-height: 30px;
   color: #ffffff;
-  right: 100px;
+  right: -4px;
   bottom: 0;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
+}
+/* слайдер */
+.header-slider {
+  display: flex;
+}
+.slider-box {
+  position: relative;
+  width: 560px;
+  height: 560px;
+  border: solid tomato 1px;
+}
+.left-arrow {
+  position: absolute;
+  top: 216px;
+  bottom: 0;
+  left: 30px;
+  right: 0;
+}
+.right-arrow {
+  position: absolute;
+  top: 216px;
+  bottom: 0;
+  left: 540px;
+  right: 0;
+}
+.slider-title {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  height: 400px;
+}
+.main-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.main-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+.main-word {
+  width: 220px;
+  height: 8px;
+  background: #FFE17F;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 60px 0 60px 0;
+}
+.metr-description {
+  display: flex;
+}
+.metr-metr {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 30px;
+  color: #000000;
+  list-style: none;
+  margin-bottom: 12px;
+}
+.metr-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444444;
+  list-style: none;
 }
