@@ -1,0 +1,312 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/rubik/rubik-400.woff2) format("woff2");
+  font-display: swap;
+}
+.html {
+  height: 100%;
+}
+body {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+}
+.header {
+  padding: 40px 140px 0 140px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* навигация */
+.navigation {
+  position: relative;
+  width: 1160px;
+  height: 300px;
+  background-color:#FFE17F;
+}
+.logo {
+  margin-left: 60px;
+  position: absolute;
+  top: -22px;
+}
+.search-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0 0 0;
+}
+.container-search {
+  display: flex;
+  align-items: center;
+}
+.form-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 519px;
+  height: 40px;
+  margin: 0 0 0 60px;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  color: #FFE17F;
+  margin-right: 20px;
+}
+.input-search {
+  width: 308px;
+  height: 20px;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+.button-icon {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+  padding: 16px;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z' fill='black'/%3E%3C/svg%3E") no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.button-search {
+  width: 160px;
+  height: 40px;
+  border-width: 2px;
+  border-style: none none none solid;
+  background: inherit;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+.menu-item {
+  list-style: none;
+  display: contents;
+}
+.menu-link {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  padding-left: 12px;
+  padding-right: 20px;
+}
+.enter-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.catalog {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0 0 0 60px;
+  padding: 0;
+}
+.catalog-item {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0 7px 0 0;
+}
+.catalog-link {
+  color: #000000;
+  text-decoration: none;
+}
+.catalog-icon {
+  width: 50px;
+  height: 50px;
+  opacity: 0.3;
+}
+.list {
+  display: flex;
+  list-style: none;
+  /* margin: 45px 0 0 0; */
+}
+.list-item {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding-right: 50px;
+}
+.list-item :last-child {
+  margin-right: 10px;
+}
+.list-link {
+  color: #000000;
+  text-decoration: none;
+}
+.number {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  text-align: right;
+  width: 250px;
+  height: 135px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #ffffff;
+  right: -4px;
+  bottom: -8px;
+}
+/* слайдер */
+.header-slider {
+  display: flex;
+  justify-content: center;
+}
+.slider-box {
+  position: absolute;
+  width: 560px;
+  height: 560px;
+  margin-right: 40px;
+  top: 203px;
+  left: 148px;
+}
+.copter {
+  position: absolute;
+}
+.left-arrow {
+  position: absolute;
+  top: 216px;
+  bottom: 0;
+  left: 30px;
+  right: 0;
+}
+.right-arrow {
+  position: absolute;
+  top: 216px;
+  bottom: 0;
+  left: 540px;
+  right: 0;
+}
+.slider-title {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  height: 400px;
+  position: absolute;
+  top: 320px;
+  left: 750px;
+}
+.main-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+.main-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+.main-word {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 8px;
+  background: #FFE17F;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 60px 0 60px 0;
+}
+.metr-description {
+  display: flex;
+}
+.metr-metr {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 30px;
+  color: #000000;
+  list-style: none;
+  margin-bottom: 12px;
+}
+.metr-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444444;
+  list-style: none;
+}
+.indicators-list {
+  position: absolute;
+  top: 733px;
+  left: 629px;
+  display: flex;
+  justify-content: center;
+}
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: solid 2px #000000;
+  background: #ffffff;
+  list-style: none;
+  margin-left: 20px;
+}
+.indicator:first-child {
+  background: #000000;
+}

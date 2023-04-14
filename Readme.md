@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Евгений Лебедев](https://up.htmlacademy.ru/htmlcss/36/user/2250645).
-* Наставник: `Неизвестно`.
+- Студент: [Евгений Лебедев](https://up.htmlacademy.ru/htmlcss/36/user/2250645).
+- Наставник: [Артём Картавый](https://htmlacademy.ru/profile/artem_k).
 
 ---
 
